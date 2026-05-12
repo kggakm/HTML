@@ -5,17 +5,20 @@
     <title>3_CSS_구조_선택자</title>
     <style>
         /* 구조 선택자 */
-        ul > li:first-child { color : red; }
-        ul > em:last-child { color : blue; }
-        ul > li:nth-child(2) { color : green; }
-        ul > li:nth-child(4) { color : greenyellow; }
-        ul > em:nth-of-type(1) { color : orange; }
+        .city > li:first-child { color : red; }
+        .city > em:last-child { color : blue; }
+        .city > li:nth-child(2) { color : green; }
+        .city > li:nth-child(4) { color : greenyellow; }
+        .city > em:nth-of-type(1) { color : orange; }
+
+        ul:nth-child(3) > li:nth-child(1) { background : green; }
+        ul:nth-of-type(2) > li:nth-child(2) { background : orange;}
     </style>
 </head>
 <body>
     <h3>3.CSS 구조 선택자</h3>
 
-    <ul>
+    <ul class="city">
         <li>서울</li>
         <li>대전</li>
         <li>대구</li>
@@ -24,6 +27,13 @@
         <em>인천</em>
         <em>울산</em>
         <em>세종</em>
+    </ul>
+
+    <ul>
+        <li>한국</li>
+        <li>미국</li>
+        <li>일본</li>
+        <li>중국</li>
     </ul>
 
 </body>
