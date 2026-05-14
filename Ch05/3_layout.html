@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>4_layout</title>
+    <title>3_layout</title>
     <style>
         /* 초기화 */
         * {
@@ -12,7 +12,7 @@
         }
 
         ul, ol { list-style: none; }
-        a { text-decoration: none; color: #111; }
+        a { text-decoration: none; color: #111;}
         input, textarea { outline: none; }
 
         /* container */
@@ -20,12 +20,13 @@
             width: 800px;
             height: auto;
             padding: 10px;
+            background: #fff;
             border: 1px solid black;
             box-sizing: border-box;
             margin: 0 auto;
         }
 
-        /* 헤더 */
+        /* header */
         header {
             width: 100%;
             height: 120px;
@@ -35,61 +36,70 @@
             box-sizing: border-box;
         }
 
-        /* 메인 */
+        /* main */
         main {
             width: 100%;
-            min-height: 400px;
+            height: auto;
+            margin: 10px 0;
             padding: 10px;
             background: #eee;
-            margin: 10px 0;
             border: 1px dashed black;
             box-sizing: border-box;
-            overflow: hidden;
-
         }
 
-        main > aside {
-            float: left;
-            width: 216px;
-            height: 400px;
+        main > section {
+            width: 100%;
+            height: auto;
             padding: 10px;
             background: #ddd;
             border: 1px dashed black;
             box-sizing: border-box;
-
+        }
+        
+        main > section:nth-child(2) {
+            margin-top: 10px;
         }
 
-        main > section {
-            float: left;
-            width: 530px;
-            height: 400px;
-            margin-left: 10px;
+        main > section > article {
+            width: 100%;
+            height: 200px;
             padding: 10px;
-            background-color: #ddd;
-            border: 1px dashed black;
+            background: #ccc;
+            border:1px dashed black;
             box-sizing: border-box;
-
         }
 
+        main > section > article:nth-child(2) {
+            margin-top: 10px;
+        }
 
-        /* 푸터 */
+        /* footer */
         footer {
             width: 100%;
             height: 100px;
             padding: 10px;
             background: #eee;
             border: 1px dashed black;
-            box-sizing: border-box;
+            box-sizing: border-box; 
         }
+
     </style>
 </head>
 <body>
     <div id="container">
         <header>header</header>
         <main>
-            <p>main</p>
-            <aside>aside</aside>
-            <section>section</section>
+            main
+            <section>
+                section #1
+                <article>article #1</article>
+                <article>article #2</article>
+            </section>
+            <section>
+                section #2
+                <article>article #1</article>
+                <article>article #2</article>
+            </section>
         </main>
         <footer>footer</footer>
     </div>
