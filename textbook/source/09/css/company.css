@@ -1,0 +1,8 @@
+#company { margin-top: 30px;  }
+#company h2 { font-weight: normal;  font-size: 23px; }
+#company p { width: 800px; margin-top: 10px; line-height: 180%; }
+#company img { margin-top: 20px; }
+#field div { width: 340px;  float: left;  margin-top: 30px; border-top: solid 2px black; padding-top: 10px; }
+#field div:nth-child(2), #field div:nth-child(3) { margin-left: 40px; }
+#field div ul { margin-top: 20px; }
+#field div li:nth-child(2) { margin-top:8px; }

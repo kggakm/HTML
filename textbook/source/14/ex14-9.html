@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<input id="name" type="text" placeholder="이름 입력">
+<button onclick="check()">확인</button>
+
+<script>
+function check() {
+    let value = document.getElementById("name").value;
+
+    if (value == "") {
+        alert("이름을 입력하세요!");
+    } else {
+        console.log("입력한 이름:", value);
+    }
+}
+</script>
+</body>
+</html>

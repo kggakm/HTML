@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<ul id="fruitList">
+  <li>사과</li>
+  <li>바나나</li>
+  <li>포도</li>
+</ul>
+<button id="btnRemove">항목 삭제</button>
+
+<script>
+const fruitList = document.getElementById("fruitList");
+const btnRemove = document.getElementById("btnRemove");
+
+btnRemove.onclick = function () {
+  const lastItem = fruitList.lastElementChild; // 마지막 li 요소
+  if (lastItem) {                              // 항목이 있을 때만 삭제
+    fruitList.removeChild(lastItem);
+  }
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { margin: 0; }
+.wrapper { max-width: 960px; margin: 0 auto; }
+.header { background: green; color: white; padding: 16px;}
+.layout { display: flex; min-height: 200px; }
+.sidebar { width: 30%; padding: 16px; background: #cccccc; }
+.main { width: 70%; padding: 16px; background: #eeeeee; }
+@media (max-width: 640px) {
+    .layout {
+        flex-direction: column;  /* 가로 → 세로 배치로 변경 */
+    }
+    .sidebar, .main {
+        width: 100%;             /* 각각 한 줄 전체를 차지 */
+    }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1>반응형 레이아웃 예제</h1>
+        <p>화면 폭에 따라 2단 → 1단으로 바뀌는 구조</p>
+    </header>
+    <section class="layout">
+        <aside class="sidebar">
+            <h2>사이드바</h2>
+            <p>메뉴, 카테고리, 공지사항 등을 배치하는 영역입니다.</p>
+        </aside>
+        <main class="main">
+            <h2>메인 콘텐츠</h2>
+            <p>
+                이 영역에는 실제 글, 이미지, 동영상 등 주요 콘텐츠가 들어갑니다.
+            </p>
+        </main>
+    </section>
+</div>
+</body>
+</html>

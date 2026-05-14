@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<input id="age" type="text" placeholder="나이 입력">
+<button onclick="checkAge()">확인</button>
+<p id="msg"></p>
+
+<script>
+function isAdult(age) {
+    return age >= 19;
+}
+
+function checkAge() {
+    let age = Number(document.getElementById("age").value);
+
+    if (isAdult(age)) {
+        document.getElementById("msg").innerText = "성인입니다.";
+    } else {
+        document.getElementById("msg").innerText = "미성년입니다.";
+    }
+}
+</script>
+</body>
+</html>

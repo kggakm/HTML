@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box;}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+/* 12열 그리드 */
+.row {
+    display: flex;
+    flex-wrap: wrap;   /* 줄바꿈 허용 → 반응형 */
+}
+.col { padding: 10px; background-color: #eee; border: 1px solid #cccccc; }
+/* 예: col-4 → 전체 12 중 4열 사용 */
+.col-4 { width: 33.333%; }
+.col-6 { width: 50%; }
+.col-12 { width: 100%; }
+/* 모바일(480px 이하)에서는 모두 한 줄 */
+@media (max-width: 480px) {
+    .col-4, .col-6, .col-12 {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col col-4">4열</div>
+        <div class="col col-4">4열</div>
+        <div class="col col-4">4열</div>
+
+        <div class="col col-6">6열</div>
+        <div class="col col-6">6열</div>
+
+        <div class="col col-12">12열</div>
+    </div>
+</div>
+</body>
+</html>

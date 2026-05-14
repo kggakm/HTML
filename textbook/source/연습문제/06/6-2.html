@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#title1, #title2, #title3 {    /* 그룹 선택자 : id(title1, title2, title3) */
+    width: 700px; 
+}   
+#title1 { text-align: center; }       /* 그룹 선택자 : id(title1, title2) */
+#title2 { text-align: right; }       /* 그룹 선택자 : id(title1, title2) */
+#title3 {                                       /* 아이디 선택자 : id(title3) */
+	border-bottom: solid 3px black;   
+	padding-bottom: 8px;              
+}
+#info p { width:700px; line-height: 180%; }      /* 자손 선택자 : <p> */
+#info .red { font-weight: bold; color: red; }    /* 자손 선택자 : class(red) */
+#info ul { font-size: 18px; margin-top: 20px; }    /* 자손 선택자 : <ul> */
+#info li { padding: 5px; }                          /* 자손 선택자 : <li> */
+</style>
+</head>
+<body>
+	<h1 id="title1">대천 해수욕장</h1>
+	<h4 id="title2">충청남도의 해수욕장</h4>
+	<h2 id="title3">기본 정보</h2>
+    <div id="info">
+        <p>1990년대에는 해운대 해수욕장을 넘어선 <span class="red">국내에서 가장 유명한 해수욕장</span>이었으며, 
+            현재도 <span class="red">수도권에서 서해안고속도로만 타면 1시간 반에서 2시간</span>이면 충분하고 충청도, 
+            전라북도에서도 굉장히 많이 찾아온다.</p>
+        <img src="img/daechun.png">
+        <ul>
+        <li>애완견 : 동반가능, 시각장애인 편의시설</li>
+        <li>주차 : 편의시설 무료이용 가능</li>
+        <li>유모차 : 대여가능</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p id="msg">반갑습니다.</p>
+<button id="btnStyle">스타일 변경</button>
+
+<script>
+const msg = document.getElementById("msg");
+const btnStyle = document.getElementById("btnStyle");
+
+btnStyle.onclick = function () {
+  msg.style.fontSize = "24px";        // 글자 크기
+  msg.style.backgroundColor = "yellow"; // 배경색
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+	margin: 0;						/* 마진 초기화 */
+	padding: 0;						/* 패딩 초기화 */
+}
+ul {
+	margin: 30px;           		/* 마진 */
+	width: 430px;					/* 너비 */
+	border: solid 1px #dddddd;      /* 경계선 */
+}
+li {
+	list-style-type: none;          /* 글머리 기호 삭제 */
+	padding: 5px 20px;				/* 패딩 */
+}
+li:nth-child(1) img {
+	width: 300px;					/* 너비 */
+    margin-left: 45px;
+}
+li:nth-child(2) {
+	border-top: solid 1px #dddddd; 	/* 상단 경계선 */
+	font-weight: bold;				/* 볼드체 */
+	font-size: 18px;				/* 글자 크기 */
+	padding-top: 20px;				/* 상단 패딩 */
+}
+li:nth-child(3) {
+	font-weight: bold;				/* 볼드체 */
+}
+li:nth-child(4) {
+	margin-top: 10px;				/* 상단 마진 */
+	line-height: 150%;				/* 줄 간격 */
+}
+li:nth-child(5) {
+	margin-top: 10px;				/* 상단 마진 */
+	margin-bottom: 10px;			/* 하단 마진 */
+}
+li:nth-child(5) span {
+	color: orange;                /* 글자 색상 */
+}
+</style>
+</head>
+<body>
+	<ul>
+	<li><img src="img/choco.png"></li>
+	<li>수제 카카오 고급 밀크 생초콜렛</li>
+	<li>25,000원</li>
+	<li>판매자가 직접 만든 초콜렛입니다. 집들이, 기념일, 생일 등 특별한 날에 달콤한 초콜렛과 함께...</li>
+	<li>리뷰 <span>130</span> · 평점 <span>4.9/5</span></li>
+	</ul>
+</body>
+</html>

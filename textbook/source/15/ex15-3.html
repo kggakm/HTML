@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p id="result"></p>
+<script>
+function c2f(x) {
+    return (x * 9/5.0) + 32.0;                  
+}
+
+let c, f;       // c: 섭씨, f: 화씨
+let text = "";
+text += "--------------<br>";
+text += "섭씨 화씨<br>";
+text += "--------------<br>";
+for (let c=-10; c <= 30; c += 10 ) {
+    text += c + " " + c2f(c) + "<br>";         // c: 섭씨
+}
+         
+document.getElementById("result").innerHTML = text;   
+</script>
+</body>
+</html>

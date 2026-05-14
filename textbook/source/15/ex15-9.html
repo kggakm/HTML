@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<input id="username" type="text" placeholder="이름 입력">
+<button onclick="show()">인사하기</button>
+<p id="msg"></p>
+
+<script>
+function makeGreet(name) {
+    return "안녕하세요, " + name + "님!";
+}
+
+function show() {
+    let name = document.getElementById("username").value;
+    document.getElementById("msg").innerText = makeGreet(name);
+}
+</script>
+
+</body>
+</html>

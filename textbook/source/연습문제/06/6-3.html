@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { font-family: "돋움"; }  /* 요소 선택자 : 글꼴 설정 */
+img { width: 250px; }                  /* 요소 선택자 : 이미지 너비 */
+.red {                                 /* 클래스 선택자 */
+	color: red;				  	  /* 글자 색상 */
+	font-size: 30px;				   /* 글자 크기 */
+}
+#main div {						       /* 자손 선택자 : <div> */
+	width: 400px;					   /* 박스 너비 */
+	background-color: green;		/* 배경 색상 */
+	color: white;					/* 글자 색상 */
+	padding: 20px;					/* 패딩 */
+	line-height: 200%;				/* 줄 간격 */
+    border-radius: 20px;            /* 경계선 모서리 둥글게 */
+}
+#main h3 { margin-top: 30px; }		/* 자손 선택자 : <h3> */
+.yellow_bold {						/* 클래스 선택자 */
+	color: yellow;                /* 글자 색상 */
+	font-weight: bold;              /* 글자 볼드체 */
+}
+</style>
+</head>
+<body>
+	<div id="main">
+		<img src="img/book1.png">
+		<h3><span class="red">01</span> 누구를 위한 책인가?</h3>
+		<div>
+			- <span class="yellow_bold">프로그래밍 입문</span>을 원하는 분<br>
+			- C++ 언어는 익숙한 데 파이썬은 처음인 분<br>
+			- 대학 및 교육 기관에서 파이썬을 강의하려는 분
+		</div>
+		<h3><span class="red">02</span> 이 책의 특징</h3>
+		<div>
+			- 재미있고 <span class="yellow_bold">다양한 실습 예제</span><br>
+			- YOUTUBE 동영상 콘텐츠 제공<br>
+			- 다양한 난이도의 연습문제 다수 제공
+		</div>		
+	</div>
+</body>
+</html>

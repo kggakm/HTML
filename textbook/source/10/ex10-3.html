@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+.box {
+    width: 100%;
+    height: 150px;
+    background: gray;
+    text-align: center;
+    color: white;
+}
+/* 600px 이하: 파란색 */
+@media (max-width: 600px) {
+    .box {
+        background: blue;
+    }
+}
+/* 600px 초과 ~ 1024px 이하: 초록색 */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .box {
+        background: orange;
+    }
+}
+/* 1024px 초과: 주황색 */
+@media (min-width: 1025px) {
+    .box {
+        background: green;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="box">
+        화면 크기를 조절해 보세요!
+    </div>
+</body>
+</html>

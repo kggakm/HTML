@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<input id="n1" type="text" placeholder="첫 번째 숫자">
+<input id="n2" type="text" placeholder="두 번째 숫자">
+<button onclick="calc()">계산하기</button>
+<p id="result"></p>
+
+<script>
+function sum(a, b) {
+    return a + b;
+}
+
+function calc() {
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+
+    document.getElementById("result").innerText = "결과: " + sum(a, b);
+}
+</script>
+</body>
+</html>

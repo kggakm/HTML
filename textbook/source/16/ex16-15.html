@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<button id="btn">클릭</button>
+<p id="result1"></p>
+<p id="result2"></p>
+
+<script>
+const btn = document.getElementById("btn");
+const result1 = document.getElementById("result1");
+const result2 = document.getElementById("result2");
+
+btn.addEventListener("click", function () {
+    result1.innerHTML = "안녕하세요.";
+});
+
+btn.addEventListener("click", function () {
+    result2.innerHTML = "반갑습니다.";
+});
+</script>
+</body>
+</html>

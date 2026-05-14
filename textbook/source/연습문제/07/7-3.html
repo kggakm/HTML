@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#board table {
+	border-collapse: collapse;			/* 단일 경계선 */
+	border-top: solid 3px black;		/* 상단 경계선 */
+}
+#board td {
+	border-bottom: solid 1px #cccccc;	/* 하단 경계선 */
+	padding:10px;						/* 패딩 */
+}
+#board td:first-child {	width: 80px; }	/* <td>의 첫 번째 요소 선택 */
+#board input {                          /* <input> 요소 선택 */
+	width: 500px;						/* 너비 */
+	height: 25px;						/* 높이 */
+}
+#board textarea {                       /* <textarea> 요소 선택 */
+	width: 500px;						/* 너비 */
+	height: 100px;						/* 높이 */
+}
+#board .buttons {                       /* buttons 클래스 선택 */
+	width: 620px;						/* 너비 */
+	text-align: right;					/* 우측 정렬 */
+	margin-top: 20px;					/* 상단 마진 */
+}
+#board button {                         /* <button> 요소 선택 */
+	padding: 5px 20px;					/* 패딩 */
+	margin-left: 3px;					/* 좌측 마진 */
+}
+</style>
+</head>
+<body>
+<div id="board">
+	<h3>게시판 글쓰기</h3>
+	<table>
+	<tr>
+		<td>이름</td>
+		<td>홍길동</td>
+	</tr>
+	<tr>
+		<td>제목</td>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<td>글 내용</td>
+		<td><textarea></textarea></td>
+	</tr>
+	<tr>
+		<td>파일</td>
+		<td><input type="file"></td>
+	</tr>
+	</table>
+	<div class="buttons">
+		<button>저장하기</button> <button>목록보기</button>
+	</div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0;  padding: 0;  box-sizing: border-box; }
+li { list-style-type: none;  }      
+.box { width: 1100px;  margin: 0 auto; }   
+#faq h1 { 
+    margin-top: 30px; 
+    border-bottom: solid 1px black;     /* 하단 경계선 */
+    padding-bottom: 10px; 
+}
+#category { margin-top: 30px; }
+#category li { 
+    display: inline-block;                /* 인라인-블록 설정 */
+     margin-right: 10px;  
+     padding: 5px 40px;  
+     border: solid 1px #cccccc;  
+     text-align: center; }                /* 글자 중앙 정렬 */
+#category li:first-child { border: solid 1px black; }   /* <li> 요소의 첫번째 자식 */
+#list h3 {  margin-top: 30px; border-bottom: solid 1px #aaaaaa;  
+    padding-bottom: 10px; }
+#list .items { border-bottom: solid 1px #dddddd; }
+#list ul li:first-child { text-align: center; }
+#list .items li { display: inline-block; padding: 20px; }    /* 인라인-블록 설정 */
+#list .items li:nth-child(1) { width: 200px; }
+#list .items li:nth-child(2) { width: 800px; }
+#list .items li:nth-child(3) { width: 100px; text-align: center; }
+</style>
+</head>
+<body>
+<section id="faq">
+    <div class="box">	  
+        <h1>자주묻는 질문</h1>
+        <ul id="category">
+            <li>전체<br>(100)</li>
+            <li>회원관리<br>(10)</li>
+            <li>상품<br>(10)</li>
+            <li>주문<br>(10)</li>
+            <li>배송<br>(10)</li>
+        </ul>
+        <div id="list">
+            <h3>FAQ > 전체</h3>
+            <ul>
+                <li>
+                    <ul class="items"><li>구분</li><li>제목</li><li>조회수</li></ul>
+                </li>			
+                <li>
+                    <ul class="items"><li>회원관리</li><li>간편 로그인은 무엇인가요?</li><li>100</li></ul>
+                </li>			
+                <li>
+                    <ul class="items"><li>회원관리</li><li>간편 로그인은 무엇인가요?</li><li>100</li></ul>
+                </li>									
+            </ul>	
+        </div>
+    </div> <!-- box -->
+</section>
+</body>
+</html>

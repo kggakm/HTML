@@ -1,0 +1,21 @@
+#event h1 { margin-top: 30px; }
+#event_img { margin: 20px 0; }
+#tabs span { 
+    display: block; 
+    width: 366px;  
+    float: left; 
+    padding: 10px; 
+    margin: 30px 0; 
+    text-align: center;  
+    border-top: solid 1px black;  
+    border-bottom: solid 1px black; 
+}
+#tabs span:nth-child(1) { background-color: black; color: white; }
+#tabs span:nth-child(2) { border-right: solid 1px black;  }
+#tabs span:nth-child(3) { border-right: solid 1px black; }
+.left { float: left; }
+.right { float: right; }
+.items { margin-top: 30px; }
+.items img { width: 540px; }
+.items li:nth-child(2) { margin-top: 10px; font-size: 20px; }
+.items li:nth-child(3) { margin-top: 5px; }

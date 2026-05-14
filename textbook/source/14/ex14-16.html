@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<h3>오늘 할 일 목록</h3>
+<button onclick="makeList()">목록 생성</button>
+<ul id="todo"></ul>
+
+<script>
+function makeList() {
+    let html = "";      // 빈 문자열에서 시작
+    let i = 1;          // 카운터 변수
+
+    while (i <= 3) {    // 1부터 3까지 반복
+        html += "<li>할 일 " + i + "</li>";  // HTML 문자열 이어 붙이기
+        i++;                                 // i 값을 1씩 증가
+    }
+
+    document.getElementById("todo").innerHTML = html; // 완성된 문자열을 화면에 넣기
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box;}
+.row {
+    display: flex;            /* 가로 방향 레이아웃 활성화 */
+    flex-wrap: wrap;          /* 자동 줄바꿈 */
+}
+.col-6 {
+    width: 50%;               /* 6/12 = 50% */
+}
+</style>
+</head>
+<body>
+<div class="row">
+    <div class="col-6" style="border:solid 1px red;">왼쪽 영역</div>
+    <div class="col-6" style="border:solid 1px red;">오른쪽 영역</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div id="container">
+  <p id="first">기존 단락</p>
+</div>
+<button id="btnInsert">새 단락 추가</button>
+
+<script>
+const container = document.getElementById("container");
+const first = document.getElementById("first");
+const btnInsert = document.getElementById("btnInsert");
+let num = 1;
+
+btnInsert.onclick = function () {
+  const p = document.createElement("p");   // 새 p 요소 생성
+  p.innerText = "단락" + num;  // 내용 설정
+  container.insertBefore(p, first);        // first 앞에 끼워 넣기
+  num += 1;
+};
+</script>
+</body>
+</html>

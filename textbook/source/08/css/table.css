@@ -1,0 +1,40 @@
+/* 공통 CSS */
+ul { list-style-type: none; }
+
+table { border-collapse: collapse; }
+table, th, td { border: solid 1px #cccccc; }
+th, td { padding: 20px;	}
+th { background-color: #eeeeee; }
+tr { text-align: center; }
+/* 관람 시간(table1.html) */
+#table1 table {	border-top: solid 3px orange; }
+#table1 .col1 { width: 200px; }
+#table1 .col2 { width: 300px; }
+#table1 .col3 { width: 300px; }
+/* 입장료(table2.html) */
+#table2 table {	border-top: solid 3px skyblue; }
+#table2 .col1 { width: 200px; }
+#table2 .col2 { width: 100px; }
+#table2 .col3 { width: 100px; }
+#table2 .col4 { width: 200px; }
+/* 버스 시간표(table3.html) */
+#table3 li { display: inline-block; margin-right: 20px; }
+#table3 table {	display: inline-block; border-top: solid 3px skyblue; }
+#table3 .col1 { width: 80px; }
+#table3 .col2 { width: 80px; }
+#table3 .col3 { width: 80px; }
+#table3 .bold { font-weight: bold; color: green; }
+/* 체험 프로그램(table4.html) */
+#table4 th { background-color: yellow; }
+#table4 span { display: inline-block; margin-top: 10px; 
+        padding: 5px 10px; border: solid 1px pink; border-radius: 10px; }
+#table4 .col1 { width: 300px; }
+#table4 .col2 { width: 200px; }
+#table4 .col3 { width: 100px; }        
+#table4 .col4 { width: 100px; } 
+/* 공연 일정(table5.html) */
+#table5 h2 { width: 780px; text-align: center; }
+#table5 .skyblue { color: skyblue; }
+#table5 th { width: 70px; }
+#table5 td { height: 50px; text-align: left; vertical-align: top;}
+#table5 .sunday { color: red; }

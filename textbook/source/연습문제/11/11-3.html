@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.menu {
+    display: block;     /* 기본: 메뉴 보임 */
+}
+.btn-toggle {
+    display: none;     /* 기본: 버튼 숨김 */
+}
+@media (max-width: 640px) {
+    .menu {
+        display: none; /* 모바일: 메뉴 숨김 */
+    }
+    .btn-toggle {
+        display: block; /* 모바일: 버튼 표시 */
+    }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Q&A</a>
+        <a href="#">Login</a>
+    </div>
+    <button class="btn-toggle">☰</button>
+</div>
+</body>
+</html>

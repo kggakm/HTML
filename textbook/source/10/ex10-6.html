@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.container {
+    display: flex;      /* 가로로 나란히 배치 */
+    gap: 16px;          /* 박스 사이 여백 */
+    padding: 16px;
+}
+.box {
+    flex: 1;            /* 남은 공간을 균등하게 나누어 사용 */
+    padding: 16px;
+    background: #eeeeee;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">박스 1<br>강좌 소개</div>
+        <div class="box">박스 2<br>공지사항</div>
+        <div class="box">박스 3<br>문의하기</div>
+    </div>
+</body>
+</html>

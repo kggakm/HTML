@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div id="box" style="padding: 20px; background-color: #eee;">
+  마우스를 여기에 올려 보세요.
+</div>
+
+<script>
+const box = document.getElementById("box");
+
+box.onmouseover = function () {
+  box.style.backgroundColor = "green";     // 마우스를 올리면 초록색
+  box.style.color = "white";
+};
+
+box.onmouseout = function () {
+  box.style.backgroundColor = "#eee";       // 마우스를 빼면 원래 색
+  box.style.color = "#000";
+};
+</script>
+</body>
+</html>

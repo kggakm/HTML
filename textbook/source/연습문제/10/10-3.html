@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.container {
+    display: flex;   /* 플렉스 컨테이너로 지정 */
+    flex-direction: row;         /* 가로 방향으로 아이템 배치 */
+    gap: 10px;
+}
+.box {
+    flex: 1;               /* 박스 너비를 균등 분배 */
+    padding: 20px;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">박스 1</div>
+        <div class="box">박스 2</div>
+        <div class="box">박스 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+/* 가운데 정렬 컨테이너 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+/* 12열 그리드 행 */
+.row {
+    display: flex;
+    flex-wrap: wrap;      /* 12칸을 넘으면 아래 줄로 내려감 */
+}
+/* 공통 컬럼 스타일 */
+.col { padding: 10px 24px; }
+.col-6 { width: 50%; }
+/* 카드 레이아웃 */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;  
+}
+.card img {
+    width: 100%;
+    padding: 20px 50px;
+    display: block;
+}
+/* 카드 내용 */
+.card-body { flex: 1; }
+.card-title {  font-size: 16px;  margin-bottom: 10px; }
+/* 카드 하단: 텍스트 왼쪽, 버튼 오른쪽 */
+.card-footer {
+    display: flex;
+    justify-content: space-between;  /* 좌우 끝으로 배치 */
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    background: blue;
+    text-decoration: none;
+}
+/* 모바일(640px 이하): 한 줄에 한 카드(12열 전체 사용) */
+@media (max-width: 640px) {
+    .col-6 {
+        width: 100%; 
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2 style="margin: 10px 30px;">추천 강의</h2>
+    <div class="row">
+        <div class="col col-6">
+            <article class="card">
+                <img src="img/course1.png" alt="파이썬 기초">
+                <div class="card-body">
+                    <h3 class="card-title">파이썬 기초</h3>
+                    <p class="card-text">변수, 조건문부터 배우는 입문 과정입니다.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer-text">난이도: 입문</span>
+                    <a href="#" class="btn">자세히 보기</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col col-6">
+            <article class="card">
+                <img src="img/course1.png" alt="웹 프로그래밍">
+                <div class="card-body">
+                    <h3 class="card-title">웹 프로그래밍</h3>
+                    <p class="card-text">HTML/CSS/JS를 배워 봅니다.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="card-footer-text">난이도: 초급</span>
+                    <a href="#" class="btn">자세히 보기</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+</body>
+</html>

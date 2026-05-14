@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+/* 12열 그리드의 기본 행 */
+.row {
+    display: flex;          /* 플렉스 컨테이너 */
+    flex-wrap: wrap;        /* 줄바꿈 허용 */
+}
+/* 공통 컬럼 스타일 */
+.col { padding: 8px; }
+/* 카드 박스 */
+.card { background: #eee; border: 1px solid #ccc; padding: 16px; }
+/* 기본: 모바일 기준 1단(12열) */
+.col-12 { width: 100%; }    
+/* 중간 화면(≥768px): 2단(6열 + 6열) */
+@media (min-width: 768px) {
+    .col-md-6 { width: 50%; } 
+}
+/* 큰 화면(≥1024px): 3단(4열 + 4열 + 4열) */
+@media (min-width: 1024px) {
+    .col-lg-4 { width: 33.333%; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>추천 여행 상품</h2>
+    <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4">
+            <div class="card">상품 1</div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+            <div class="card">상품 2</div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+            <div class="card">상품 3</div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+            <div class="card">상품 4</div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+            <div class="card">상품 5</div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+            <div class="card">상품 6</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

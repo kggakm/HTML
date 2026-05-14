@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.wrapper {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 16px;
+}
+/* 버튼 묶음 컨테이너 */
+.btn-group {
+    display: flex;               /* 가로로 버튼 나란히 배치 */
+    flex-wrap: wrap;             /* 줄바꿈 허용 → 작은 화면에서 자동 개행 */
+    gap: 10px;                   /* 버튼 사이 간격 */
+}
+/* 공통 버튼 스타일 */
+.btn {
+    flex: 1;                     /* 가능한 공간을 균등 분배 */
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+/* 버튼 유형별 색상 */
+.btn-primary { background-color: blue; color: #fff; }
+.btn-outline { background-color: #ffffff; color: blue; border-color: blue; }
+.btn-success { background: green; color: #fff; }
+.btn-danger { background: red; color: #fff; }
+/* 모바일(640px 이하)에서는 버튼을 한 줄에 꽉 채우기 */
+@media (max-width: 640px) {
+    .btn-group {
+        flex-direction: column;  /* 세로 방향으로 쌓기 */
+    }
+    .btn {
+        width: 100%;             /* 한 줄 전체를 차지 */
+        flex: none;              /* flex 비율 해제 (너비 100% 우선) */
+    }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <h2 style="margin-bottom:16px;">반응형 버튼</h2>
+    <div class="btn-group">
+        <button class="btn btn-primary">기본 버튼</button>
+        <button class="btn btn-outline">테두리형 버튼</button>
+        <button class="btn btn-success">확인</button>
+        <button class="btn btn-danger">삭제</button>
+    </div>
+</div>
+</body>
+</html>

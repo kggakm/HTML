@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<input id="nameBox" type="text">
+<p id="preview"></p>
+
+<script>
+const box = document.getElementById("nameBox");
+const preview = document.getElementById("preview");
+
+box.addEventListener("input", function () {
+  preview.innerText = box.value;
+});
+</script>
+</body>
+</html>

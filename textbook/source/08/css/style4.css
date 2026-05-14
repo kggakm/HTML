@@ -1,0 +1,42 @@
+.box {
+	width: 1000px;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+header {
+	height: 60px;
+	background-color: #dddddd;
+}
+section#main_image {
+	height: 150px;
+	background-color: yellow;	
+}
+aside#menu {
+	width:200px;
+	height: 300px;	
+	float:left;
+	background-color: pink;
+}
+section#main_content {
+	width:650px;
+	height: 300px;
+	float:left;
+	background-color: green;
+}
+aside#banner {
+	width:150px;
+	height: 300px;	
+	float:right;
+	background-color: skyblue;
+}
+footer {
+	height: 60px;
+	background-color: #dddddd;
+}
+header, aside, section, footer {
+	font-size: 20px;
+	text-align: center;
+	padding-top: 30px;
+} 

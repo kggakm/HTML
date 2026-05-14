@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h3>공지사항</h3>
+<p id="msg">다음 주부터 강의 시간이 변경됩니다.</p>
+<button onclick="toggleText()">보이기/숨기기</button>
+<script>
+function toggleText() {
+    const p = document.getElementById("msg");
+    if (p.style.display === "none")
+        p.style.display = "block";
+    else 
+        p.style.display = "none";
+}
+</script>
+</body>
+</html>

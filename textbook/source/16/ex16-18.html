@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<input id="nameInput" type="text" placeholder="이름을 입력하세요">
+<p id="preview">여기에 표시됩니다.</p>
+
+<script>
+const nameInput = document.getElementById("nameInput");
+const preview = document.getElementById("preview");
+
+nameInput.addEventListener("input", function () {
+  const name = nameInput.value;            // 입력 값 읽기
+
+  if (name === "") {
+    preview.innerText = "여기에 표시됩니다.";  // 빈 문자열일 때 기본 문장
+  } else {
+    preview.innerText = "입력한 이름: " + name;
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<ul id="list">
+  <li>기존 항목</li>
+</ul>
+<button id="btnAdd">항목 추가</button>
+
+<script>
+const list = document.getElementById("list");
+const btnAdd = document.getElementById("btnAdd");
+let num = 1;
+
+btnAdd.onclick = function () {
+  const li = document.createElement("li");   // 새 li 요소 생성
+  li.innerText = "새로운 항목 " + num;            // 항목 내용 설정
+  list.appendChild(li);   // ul의 마지막에 추가
+  num += 1; 
+};
+</script>
+</body>
+</html>

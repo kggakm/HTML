@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box;}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    width: 100%;         /* 기본: 한 줄 1개 */
+}
+@media (min-width: 768px) {
+    .card {
+        width: calc(50% - 10px);     /* 768px↑ : 2개 배치 */
+    }
+}
+</style>
+</head>
+<body>
+<div class="card-list">
+    <div class="card" style="background:#fafafa; border:1px solid #ddd; padding:16px;">카드 1</div>
+    <div class="card" style="background:#fafafa; border:1px solid #ddd; padding:16px;">카드 2</div>
+</div>
+</body>
+</html>

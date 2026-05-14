@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+/* 12열 그리드 행 */
+.row {
+    display: flex;          /* 플렉스 컨테이너 */
+    flex-wrap: wrap;
+}
+/* 공통 컬럼 */
+.col { padding: 8px; }
+.main-box { background: #eee; border: 1px solid green; padding: 16px; }
+.sidebar-box { background: #eee; border: 1px solid blue; padding: 16px; }
+/* 기본: 모바일 기준, 모두 12열(1단) */
+.col-12 { width: 100%; }        /* 12/12 = 100% */
+/* 모바일에서의 순서: 사이드바 → 메인 */
+.sidebar { order: 1; }          /* 먼저 표시 */
+.main    { order: 2; }
+/* 큰 화면(≥960px): 메인 8열, 사이드바 4열, 위치 변경 */
+@media (min-width: 960px) {
+    .col-lg-8 { width: 66.666%; }   /* 메인: 8/12 */
+    .col-lg-4 { width: 33.333%; }   /* 사이드바: 4/12 */
+    .main { order: 1; }             /* 큰 화면에서는 메인을 왼쪽(먼저) */
+    .sidebar { order: 2; }          /* 사이드바를 오른쪽(나중)으로 배치 */
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>반응형 메인 레이아웃</h2>
+    <div class="row">
+        <aside class="col col-12 col-lg-4 sidebar">
+            <div class="sidebar-box">
+                <h3>사이드바</h3>
+                <p>공지사항, 인기 글, 배너 등을 배치하는 영역입니다.</p>
+            </div>
+        </aside>
+        <main class="col col-12 col-lg-8 main">
+            <div class="main-box">
+                <h3>메인 콘텐츠</h3>
+                <p>이 영역에는 실제 기사, 블로그 글, 상품 정보 등 주요 내용이 들어갑니다.</p>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

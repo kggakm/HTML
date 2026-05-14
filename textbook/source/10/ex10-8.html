@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }    
+.container {
+    display: flex;
+    justify-content: center;   /* 가로 방향 가운데 모으기 */    
+    gap: 16px;
+    height: 100px;             /* 컨테이너 높이 */
+    border: solid 1px #ccc;
+    margin: 10px;
+}
+.container1 {  align-items: center; }
+.container2 {  align-items: flex-start; }
+.container3 {  align-items: flex-end; }
+.container4 {  align-items: stretch; }
+.item {
+    width: 80px;
+    background: green;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;       /* 박스 내부 텍스트 가운데 */
+}
+.item.h1 { height: 20px; }
+.item.h2 { height: 40px; }
+.item.h3 { height: 60px; }
+</style>
+</head>
+<body>
+    <h2 style="text-align: center; padding: 20px;">align-items 속성</h2>
+    <div class="container container1">
+        <div class="item h1">A</div><div class="item h2">B</div><div class="item h3">C</div>
+    </div>
+
+    <div class="container container2">
+        <div class="item h1">A</div><div class="item h2">B</div><div class="item h3">C</div>
+    </div>
+
+    <div class="container container3">
+        <div class="item h1">A</div><div class="item h2">B</div><div class="item h3">C</div>
+    </div>
+
+    <div class="container container4">
+        <div class="item">A</div><div class="item">B</div><div class="item">C</div>
+    </div>
+</body>
+</html>

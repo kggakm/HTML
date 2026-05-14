@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0;  padding: 0; }		
+.box { width: 1000px;	margin: 0 auto; }
+.clear { clear: both; }
+header { height: 60px;  background-color: #dddddd; }
+#image { height: 150px;  background-color: yellow;	}
+#main { width:850px;  height: 300px;  float: left;  background-color: pink; }
+#content1 { height: 100px;  background-color: pink;	}
+#content2 { height: 100px;  background-color: green;	}
+#content3 { height: 100px;  background-color: orange;	}
+#banner { width:150px;  height: 300px;	 float:right;  background-color: skyblue; }
+footer { height: 60px;	background-color: #dddddd; }
+header, aside, section, footer { text-align: center; } 	
+</style>
+</head>
+<body>
+	<header>
+		상단 헤더
+	</header>
+	<section id="image">
+		메인 이미지
+	</section>
+	<div class="box">	
+        <section id="main">
+            <div id="content1">메인 콘텐츠 1</div>
+            <div id="content2">메인 콘텐츠 2</div>
+            <div id="content3">메인 콘텐츠 3</div>
+        </section>			
+		<aside id="banner" >
+			사이드바
+		</aside>			
+	</div>		
+	<div class="clear"></div>
+	<footer>
+		하단 푸터
+	</footer>
+</body>
+</html>

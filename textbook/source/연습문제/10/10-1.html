@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+p {
+    padding: 20px;
+    color: #fff;
+    background-color: green;
+}
+/* 화면 폭이 600px 이하일 때 글자 색 변경 */
+@media screen and (max-width: 600px) { 
+    p {
+        background-color: pink; /* 작은 화면에서 배경 색상을 핑크색으로 설정 */
+    }
+}
+</style>
+</head>
+<body>
+    <p>화면 크기가 작아지면 배경색이 핑크색으로 변경됩니다.</p>
+</body>
+</html>

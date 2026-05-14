@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p id="msg">일반 문장입니다.</p>
+
+<script>
+const msg = document.getElementById("msg");
+
+// 값 읽기
+console.log(msg.innerHTML);
+// 값 변경하기 (HTML 태그 포함)
+msg.innerHTML = "<strong>굵게 표시된 문장입니다.</strong>";
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h3 id="text">이벤트란?</h3>
+<button id="btnStyle">스타일 변경</button>
+
+<script>
+const text = document.getElementById("text");
+const btnStyle = document.getElementById("btnStyle");
+
+btnStyle.onclick = function () {
+  text.style.color = "blue";       // 글자 색 변경
+  text.style.fontSize = "24px";    // 글자 크기 변경
+  text.style.fontWeight = "bold";  // 글자 굵게
+  text.style.backgroundColor = "yellow";  // 배경 색상 노란색
+};
+</script>
+</body>
+</html>

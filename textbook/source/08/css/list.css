@@ -1,0 +1,13 @@
+/* 공통 CSS */
+ul { list-style-type: none; }
+.clear { clear: both; }
+/* 이용 안내(list1.html) */
+#list1 { background-color: #eeeeee; padding: 20px; }
+#list1 ul > li { list-style-image: url("../img/emoji1.png"); }
+#list1 p { line-height: 180%; }
+#list1 .free ul > li { list-style-image: url("../img/emoji2.png"); margin-top: 10px; }
+/* 수목원 소개(list2.html) */
+#list2 h2 { margin-left: 40px; }
+#list2 .box1 li { float: left; padding: 20px; border:solid 1px red; }
+
+#list2 .box2 li { list-style-type: disc; margin: 10px 20px; }
